@@ -4,14 +4,9 @@ __author__ = 'mcapizzi'
 import halfing as h
 import merge as m
 
-def runMergeSort(z):
-    sortedA = []
-    sortedB = []
-    mergeSort(z)
-
 def mergeSort(z):
+    print("splitting ", z)
     if len(z) > 1:
-        print("halfing ", z)
         a, b = h.halfing(z)
         print("running mergeSort on ", a)
         mergeSort(a)
@@ -20,10 +15,8 @@ def mergeSort(z):
         print("merging", a, b)
         c = m.merge(a, b)
         print("merged", c)
-    else:
-        a, b = h.halfing(z)
-        c = m.merge(a, b)
-        print("merge", c)
+
+
 
 
 
