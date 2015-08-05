@@ -7,16 +7,14 @@ import merge as m
 def mergeSort(z):
     print("splitting ", z)
     if len(z) > 1:
-        a, b = h.halfing(z)
-        print("running mergeSort on ", a)
-        mergeSort(a)
-        print("running mergeSort on ", b)
-        mergeSort(b)
-        print("merging", a, b)
-        c = m.merge(a, b)
+        l, r = h.halfing(z)
+        print("running mergeSort on left ", l)
+        mergeSort(l)
+        print("running mergeSort on right ", r)
+        mergeSort(r)
+        print("merging", l, r)
+        c = m.merge(l, r)
         print("merged", c)
-
-
 
 
 
