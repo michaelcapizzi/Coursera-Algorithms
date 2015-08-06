@@ -6,8 +6,6 @@ def merge(a, b):
     i = 0
     j = 0
 
-#TODO add condition for duplicates!!!
-
     for k in range(len(a) + len(b)):
         if len(a) <= i and j <= len(b):            #if k is greater than a but not b
             c.append(b[j])
@@ -16,7 +14,7 @@ def merge(a, b):
             c.append(a[i])
             i += 1
         elif len(a) > i and len(b) > j:
-            if a[i] > b[j]:
+            if a[i] >= b[j]:                        #handles duplicates
                 c.append(b[j])
                 j += 1
             elif b[j] > a[i]:
