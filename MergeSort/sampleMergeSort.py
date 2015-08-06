@@ -1,14 +1,12 @@
 __author__ = 'mcapizzi'
 
 import random
-import timeit
 import mergeSort as m
 
 print("generating random list to run mergeSort on")
-list = [random.randint(0, 10000000) for r in range(10000000)]         #ten million digits
+list = [random.randint(0, 15) for r in range(15)]         #ten million digits
 
 print("running mergeSort")
-time = m.mergeSort(list)
+sortedList = m.mergeSort(list)
+print(sortedList)
 
-print(list)
-print("time to merge and sort: ", time)
