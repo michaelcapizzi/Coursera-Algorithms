@@ -10,13 +10,9 @@ def mergeSort(z):
         return z                #the absence of this was the problem!
     elif len(z) > 1:
         l, r = h.halfing(z)
-        print("recursing on left ", l)
         l = mergeSort(l)
-        print("recursing on right ", r)
         r = mergeSort(r)
-        print("merging", l, r)
         c = m.merge(l, r)
-        print("merged", c)
         return c
 
 
