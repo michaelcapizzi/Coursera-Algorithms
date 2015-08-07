@@ -1,6 +1,7 @@
 __author__ = 'mcapizzi'
 
 import random
+
 import MergeSort.mergeSort as m
 
 print("generating random list to run mergeSort on")
