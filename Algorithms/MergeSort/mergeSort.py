@@ -1,6 +1,5 @@
 __author__ = 'mcapizzi'
 
-
 import halfing as h
 import merge as m
 
